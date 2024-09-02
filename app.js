@@ -14,7 +14,6 @@ const SupperConnectNode = () => {
 
     app.use('/api', textRoutes);
     app.use('/api', fileRoutes);
-    app.use('/api', states);
 
     app.get('/', (req, res) => {
         res.setHeader('Content-Type', 'application/json');
